@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project Title</title>
+	<title>Amazing</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,700&display=swap" rel="stylesheet">
 	<link media="all" rel="stylesheet" href="css/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
     <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" defer><\/script>')</script>
@@ -12,8 +13,44 @@
 </head>
 <body>
 	<div id="wrapper">
-		<header id="header"></header>
-		<main id="main"></main>
+		<header id="header">
+            <div class="container">
+                <strong class="logo">
+                    <a href="#">
+                        <img width="80" src="images/logo.png" alt="amazing">
+                    </a>
+                </strong>
+                <nav id="nav">
+                    <a href="#" class="nav-opener"><span>Menu</span></a>
+                    <ul class="menu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+		<main id="main">
+            <section class="intro-section" style="background-image: url('images/img-01.jpg')">
+                <div class="container">
+                    <div class="text-block">
+                        <h1>Amazing Dude.
+                            Amazing Life.</h1>
+                        <p>Welcome to the personal site of <strong>John Doe</strong>.
+                            A professional skier and a musician.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="container">
+                    <div class="image-block"></div>
+                    <div class="text-block"></div>
+                </div>
+            </section>
+            <section class="gallery-section">
+                <div class="container"></div>
+            </section>
+        </main>
 		<footer id="footer"></footer>
 	</div>
 </body>

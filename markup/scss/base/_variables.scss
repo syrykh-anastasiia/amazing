@@ -10,14 +10,12 @@ $widescreen: 1200px;
 // Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
 // Color names - http://name-of-color.com/
 
-$gray: #222;
+$gray: #666;
 $black: #000;
 $white: #fff;
 $light-blue: #11749e;
 
-$montserrat: 'Montserrat', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-$open-sans: 'Open Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-$roboto-condensed: 'Roboto Condensed', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$fira-sans: 'Fira Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 
 // This is the default html and body font-size for the base rem value.
 $rem-base: 16px;
@@ -27,7 +25,7 @@ $base-text-color: $black !default;
 $base-background-color: $white !default;
 $font-size-base: 15px;
 $line-height-base: 1.6;
-$base-font-family: $montserrat;
+$base-font-family: $fira-sans;
 
 $vertical-rhythm: ($line-height-base * 1em);
 
