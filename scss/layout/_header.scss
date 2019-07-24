@@ -1,0 +1,117 @@
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 10px 0;
+
+  @media(min-width: $desktop) {
+    padding: 88px 0 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  #nav {
+    justify-self: end;
+  }
+}
+
+.menu {
+  @extend %listreset;
+
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background-color: $blue;
+  padding: 10px;
+  transition: opacity .3s, visibility .3s;
+
+  @media(min-width: $tablet) {
+    left: auto;
+    width: 250px;
+  }
+
+  .nav-active & {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.nav-opener {
+  height: 22px;
+  width: 25px;
+  position: relative;
+  display: block;
+  margin-bottom: 18px;
+
+  @media(min-width: $tablet) {
+    margin-right: 26px;
+  }
+
+  .nav-active & {
+    span:before {
+      opacity: 0;
+    }
+
+    &:before,
+    &:after {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:before,
+  &:after,
+  span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: $black;
+    transition: all .3s;
+    display: block;
+  }
+
+  &:after {
+    top: 16px;
+  }
+
+  span {
+    font-size: 0;
+
+    &:before {
+      top: 8px;
+    }
+
+    &:after {
+      content: 'Menu';
+      position: absolute;
+      top: 100%;
+      left: -4px;
+      font-size: 12px;
+      padding: 6px 0 0;
+      text-transform: uppercase;
+      color: $black;
+    }
+  }
+}
