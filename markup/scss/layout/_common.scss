@@ -1,0 +1,41 @@
+.container {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  transition: color .3s;
+  text-decoration: none;
+}
+
+.intro-section {
+  @extend %bg-default;
+
+  padding: 100px 0;
+  min-height: 100vh;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -50%;
+    width: 100%;
+    transform: skewX(-50deg);
+    background-color: rgba(#42b7c8, .3);
+  }
+
+  .text-block {
+    width: 50%;
+  }
+
+  h1 {
+    font-weight: 300;
+
+    @media (min-width: $desktop) {
+      font-size: 72px;
+    }
+  }
+}
